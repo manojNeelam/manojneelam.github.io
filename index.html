@@ -1,59 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="eyezense_web_app">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="manifest" href="manifest.json">
-
-  <title>eyezense_web_app</title>
-
-  <!-- ✅ Firebase SDKs (Core + Messaging) -->
-  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-messaging.js"></script>
-
-  <!-- ✅ Firebase Configuration -->
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyC98t_l6_cyCPqQF_seZ8dGTh1hLPw6W6o",
-      authDomain: "eyezensewebapp.firebaseapp.com",
-      projectId: "eyezensewebapp",
-      storageBucket: "eyezensewebapp.firebasestorage.app",
-      messagingSenderId: "377573843302",
-      appId: "1:377573843302:web:92b4c1463207d5c3c2e8a7",
-      measurementId: "G-K89RRR3SFZ"
-    };
-
-    firebase.initializeApp(firebaseConfig);
-  </script>
-
-  <!-- ✅ Register Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('../firebase-messaging-sw.js')
-    .then(function (registration) {
-      console.log('Registration successful, scope is:', registration.scope)
-    })
-    .catch(function (err) {
-      console.log('Service worker registration failed, error:', err)
-    })
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <title>Eyezense App</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
-
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
