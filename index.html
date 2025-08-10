@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Eyezense App</title>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <base href="/eyezense_webapp/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Eyezense Web App">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="eyezense_web_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+
+  <title>eyezense_web_app</title>
+
+  <!-- ✅ Firebase SDKs -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js';
+    import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-messaging.js';
+
+    const firebaseConfig = {
+  apiKey: "AIzaSyC98t_l6_cyCPqQF_seZ8dGTh1hLPw6W6o",
+  authDomain: "eyezensewebapp.firebaseapp.com",
+  projectId: "eyezensewebapp",
+  storageBucket: "eyezensewebapp.firebasestorage.app",
+  messagingSenderId: "377573843302",
+  appId: "1:377573843302:web:92b4c1463207d5c3c2e8a7",
+  measurementId: "G-K89RRR3SFZ"
+};
+
+    const app = initializeApp(firebaseConfig);
+    const messaging = getMessaging(app);
+
+    // ✅ Register Service Worker, then request permission and get token
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/eyezense_webapp/firebase-messaging-sw.js')
+        .then(async (registration) => {
+          console.log('✅ Service Worker registered with scope:', registration.scope);
+
+          const permission = await Notification.requestPermission();
+          if (permission !== 'granted') {
+            console.warn('🔒 Notification permission not granted.');
+            return;
+          }
+
+          const currentToken = await getToken(messaging, {
+            vapidKey: 'BAB6WF8J_KQ-6aUzZlyPJPI6xmTc66qSkkvGmXxp_zOr9yzUxRiKmEP1lgxtNdSYgKWqg2sVgnL3EXaJiSXcwZI',
+            serviceWorkerRegistration: registration
+          });
+
+          if (currentToken) {
+            console.log('🔐 Web FCM Token:', currentToken);
+            // 👉 Send this token to your server if needed
+          } else {
+            console.warn('⚠️ No registration token available.');
+          }
+
+          onMessage(messaging, (payload) => {
+            console.log('📩 Foreground message received:', payload);
+            alert(`📨 ${payload?.notification?.title}\n${payload?.notification?.body}`);
+          });
+        })
+        .catch((err) => {
+          console.error('❌ Service Worker registration failed:', err);
+        });
+    }
+  </script>
 </head>
+
 <body>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
