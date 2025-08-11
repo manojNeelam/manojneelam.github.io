@@ -25352,7 +25352,7 @@ while(true)switch(s){case 0:if(a==null){s=1
 break}A.bi().$1("\u2b06\ufe0f Sending token to backend: "+a)
 p=A.aco("POST",A.e0(u.K,0,null))
 o=t.N
-p.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","APNS_SANDBOX","action","register"],o,o)))
+p.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","GCM","action","register"],o,o)))
 s=3
 return A.P(p.n9(0),$async$Lc)
 case 3:if(c.b===200)A.hl("Successfully stored token in backend")
@@ -25364,7 +25364,7 @@ var $async$a9M=A.J(function(b,c){if(b===1)return A.K(c,r)
 while(true)switch(s){case 0:A.bi().$1("\u274c Removing token from backend: "+a)
 q=A.aco("POST",A.e0(u.K,0,null))
 p=t.N
-q.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","APNS_SANDBOX","action","unregister"],p,p)))
+q.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","GCM","action","unregister"],p,p)))
 s=2
 return A.P(q.n9(0),$async$a9M)
 case 2:if(c.b===200)A.hl("Successfully removed token in backend")
@@ -42044,7 +42044,7 @@ A.kM(s,!1).a6A(A.auO(A.a8t(new A.aoS(a),null,t.z),B.kh,!1,null),new A.aoT())},
 xW(a,b){var s=0,r=A.N(t.H),q
 var $async$xW=A.J(function(c,d){if(c===1)return A.K(d,r)
 while(true)switch(s){case 0:q=A.aco("POST",A.e0(u.K,0,null))
-q.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","APNS_SANDBOX","action","register"],t.N,t.z)))
+q.sCG(0,B.a4.i5(A.ar(["device_token",a,"platform","GCM","action","register"],t.N,t.z)))
 s=2
 return A.P(q.n9(0),$async$xW)
 case 2:if(d.b===200)b.a6(t.Pu).f.H1(A.auc(null,null,null,null,B.fW,B.U,null,A.b9("Successfully registered token",null,null,null,null,null,null,null,null,null,null,null),null,A.cB(0,0,4),null,null,null,null,null,null,null,null,null))
