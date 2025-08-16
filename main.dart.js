@@ -41068,7 +41068,7 @@ a80(){var s=this.x
 s=s==null?null:s.b!=null
 if(s===!0)return
 this.x=A.aMx(B.DE,new A.ahG(this))},
-I(a){var s,r=this,q=null,p=A.ba("WebSocket with Reconnect",q,q,q,q,q,q,q,A.h9(q,q,B.l,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),o=t.p
+I(a){var s,r=this,q=null,p=A.ba("Acoustic Sensor",q,q,q,q,q,q,q,A.h9(q,q,B.l,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),o=t.p
 p=A.kh(A.b([A.afR(A.ba("Sensor Readings",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.l,16,B.k),q,q,q),new A.ahI(r))],o),B.bp,q,p)
 if(r.CW)o=A.ba("No new data to show",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.bp,16,B.k),q,q,q)
 else{o=A.b([],o)
