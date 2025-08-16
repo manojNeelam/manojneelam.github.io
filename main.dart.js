@@ -41072,7 +41072,7 @@ I(a){var s,r=this,q=null,p=A.ba("Acoustic Sensor",q,q,q,q,q,q,q,A.h9(q,q,B.l,q,q
 p=A.kh(A.b([A.afR(A.ba("Sensor Readings",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.l,16,B.k),q,q,q),new A.ahI(r))],o),B.bp,q,p)
 if(r.CW)o=A.ba("No new data to show",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.bp,16,B.k),q,q,q)
 else{o=A.b([],o)
-if(r.Q)o.push(A.ba("Hissing",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.cN,24,B.k),q,q,q))
+if(r.Q)o.push(A.ba("Hissing Detected",q,q,q,q,q,q,q,A.c4().$3$color$fontSize$fontWeight(B.cN,24,B.k),q,q,q))
 s=A.bz(a,q,t.w).w
 o.push(A.de(new A.cO(B.dd,q,q,A.agz(new A.ahJ(r),B.a6,B.aD,new A.aA(r.z,r.ax,t.Y),t.i),q),s.a.b*0.7,q))
 o=A.dA(o,B.u,B.w,B.A)}return A.hI(p,A.i6(o,q,q),q,q,A.axI(B.EL,new A.ahK(r)))},
@@ -41131,7 +41131,7 @@ $0(){var s,r=this.a,q=r.y,p=r.w,o=p.length
 if(q<o){s=B.h.en(q+100,0,o)
 q=r.as
 q.L(0,B.b.bR(p,r.y,s))
-for(;(q.c-q.b&q.a.length-1)>>>0>5000;)q.mR()
+for(;(q.c-q.b&q.a.length-1)>>>0>6000;)q.mR()
 r.y=s
 r.z=r.ax
 r.ax=q.gn(0)}},
