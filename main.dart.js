@@ -7992,7 +7992,7 @@ _.c=_.a=null},
 ahi:function ahi(a,b){this.a=a
 this.b=b},
 auo(a){switch(a.a){case 0:return new A.no(A.b([new A.hV("ez-dev-device-2","2"),new A.hV("ez-dev-device-11","11")],t.YT))
-case 2:return new A.no(A.b([new A.hV("DJI Drone Sensor 7","7"),new A.hV("DJI Drone Sensor 8","8")],t.YT))
+case 2:return new A.no(A.b([new A.hV("Drone Sensor 7","7"),new A.hV("Drone Sensor 8","8")],t.YT))
 case 1:return new A.no(A.b([new A.hV("Go2Pro Sensor 5","5"),new A.hV("Go2Pro Sensor 6","6")],t.YT))
 case 3:return new A.no(A.b([new A.hV("DragonFly Sensor 9","9"),new A.hV("DragonFly Sensor 10","10")],t.YT))
 case 4:return new A.no(A.b([],t.YT))}},
@@ -40411,11 +40411,11 @@ p.push(B.Rw)
 p.push(A.nA(new A.eo(new A.ajs(this),n),1))
 return A.ig(l,A.d3(p,B.t,B.y,B.B),n,s,n)},
 Y3(){var s=this.d
-return new A.yi(A.b([A.aqk(A.o1("assets/tutlebolt.png",24,24),B.Qu,A.o1("assets/tutlebolt_active.png",24,24)),A.aqk(A.o1("assets/drone.png",24,24),B.Qy,A.o1("assets/drone_active.png",24,24)),B.Iz,A.aqk(A.o1("assets/dragonfly.png",24,24),B.Qw,A.o1("assets/dragonfly_active.png",24,24)),B.Iy],t.P2),s,new A.ajp(this),B.IA,null)},
+return new A.yi(A.b([A.aqk(A.o1("assets/tutlebolt.png",24,24),B.Qv,A.o1("assets/tutlebolt_active.png",24,24)),A.aqk(A.o1("assets/drone.png",24,24),B.Qu,A.o1("assets/drone_active.png",24,24)),B.Iz,A.aqk(A.o1("assets/dragonfly.png",24,24),B.Qx,A.o1("assets/dragonfly_active.png",24,24)),B.Iy],t.P2),s,new A.ajp(this),B.IA,null)},
 XW(a){var s,r=null,q=["assets/tutlebolt.png","assets/drone.png",null,"assets/dragonfly.png",null][a]
 if(q!=null)q=A.o1(q,24,24)
 else q=A.apW(a===2?B.m_:B.lZ,r,24)
-s=A.be(["TurtleBot","DJI Drone","Go2Pro","DragonFly","Stationary"][a],r,r,r,r,r,r,r,r,r,r,r)
+s=A.be(["TurtleBot","Drone","Go2Pro","DragonFly","Stationary"][a],r,r,r,r,r,r,r,r,r,r,r)
 return A.aqa(q,new A.ajn(this,a),this.d===a,r,s)}}
 A.ajt.prototype={
 $1(a){return a.e===this.a},
@@ -80283,8 +80283,8 @@ B.hx=new A.XK(0,"pixel")
 B.hy=new A.lg(0,"youtube")
 B.cy=new A.lg(2,"none")
 B.AA=new A.qf(null,null,null,null,null,null,null)
-B.Qx=new A.ez("No video to play",null,null,null,null,null,null,null,null,null,null,null,null)
-B.kY=new A.qg(B.a0,null,null,B.Qx,null)
+B.Qy=new A.ez("No video to play",null,null,null,null,null,null,null,null,null,null,null,null)
+B.kY=new A.qg(B.a0,null,null,B.Qy,null)
 B.Qq=new A.ez("No data available",null,null,null,null,null,null,null,null,null,null,null,null)
 B.kZ=new A.qg(B.a0,null,null,B.Qq,null)
 B.AB=new A.vE(null,null,null,null,null,null,null,null,null)
@@ -81819,8 +81819,8 @@ B.m2=new A.fd(B.lZ,24,null,null,null)
 B.Qz=new A.ez("Stationary",null,null,null,null,null,null,null,null,null,null,null,null)
 B.Iy=new A.ro(B.m2,B.m2,B.Qz)
 B.m1=new A.fd(B.m_,24,null,null,null)
-B.Qv=new A.ez("Go2Pro",null,null,null,null,null,null,null,null,null,null,null,null)
-B.Iz=new A.ro(B.m1,B.m1,B.Qv)
+B.Qw=new A.ez("Go2Pro",null,null,null,null,null,null,null,null,null,null,null,null)
+B.Iz=new A.ro(B.m1,B.m1,B.Qw)
 B.rA=new A.Jr(0,"none")
 B.IA=new A.Jr(2,"all")
 B.IB=new A.rp(null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -82442,9 +82442,9 @@ B.OI=new A.w(!0,null,null,null,null,null,16,null,null,null,null,null,null,null,n
 B.Qr=new A.ez("Loading...",null,B.OI,null,null,null,null,null,null,null,null,null,null)
 B.NG=new A.w(!0,null,null,null,null,null,24,B.bN,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Qt=new A.ez("Welcome to Eyezense App",null,B.NG,null,null,null,null,null,null,null,null,null,null)
-B.Qu=new A.ez("TurtleBot",null,null,null,null,null,null,null,null,null,null,null,null)
-B.Qw=new A.ez("DragonFly",null,null,null,null,null,null,null,null,null,null,null,null)
-B.Qy=new A.ez("DJI Drone",null,null,null,null,null,null,null,null,null,null,null,null)
+B.Qu=new A.ez("Drone",null,null,null,null,null,null,null,null,null,null,null,null)
+B.Qv=new A.ez("TurtleBot",null,null,null,null,null,null,null,null,null,null,null,null)
+B.Qx=new A.ez("DragonFly",null,null,null,null,null,null,null,null,null,null,null,null)
 B.Tb=new A.adn(0,"system")
 B.IU=new A.p(0.056,0.024)
 B.J2=new A.p(0.108,0.3085)
