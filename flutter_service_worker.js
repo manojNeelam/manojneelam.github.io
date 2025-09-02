@@ -3,12 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "750de34c6645a4932b8c3016d49cd56c",
+const RESOURCES = {"flutter_bootstrap.js": "bd7390dfd1c97a9c33bfdc6569efe38f",
 "version.json": "a00566041bbc4ac690e7fe224bf11243",
 "index.html": "b7fbca51f77118726998b26323ea0a10",
 "/": "b7fbca51f77118726998b26323ea0a10",
 "firebase-messaging-sw.js": "06f7e4e7756a6fc260d15dcaaf9269ef",
-"main.dart.js": "994354f482eff642946cddaf2325310b",
+"main.dart.js": "99b3b12a5d1dfb3bd0eaf160a475d471",
 "flutter.js": "83d881c1dbb6d6bcd6b42e274605b69c",
 "favicon.png": "c7076b7caec083913be322e859ef6f4a",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -26,7 +26,7 @@ const RESOURCES = {"flutter_bootstrap.js": "750de34c6645a4932b8c3016d49cd56c",
 "assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin": "1233dcf611d98eb3b3d743e7690912af",
-"assets/fonts/MaterialIcons-Regular.otf": "3f6566f078d477339b40fe942e39f4f1",
+"assets/fonts/MaterialIcons-Regular.otf": "097db110b224771fcc8bcaadc9677742",
 "assets/assets/camera1.jpg": "4d04e3a59de82211df266551e7c79950",
 "assets/assets/tutlebolt.png": "adb41928b48c10eb0e075f4170f7a65b",
 "assets/assets/dragonfly_active.png": "f9ac359401e02fc51f3c1c9365ff799c",
