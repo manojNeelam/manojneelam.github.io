@@ -39926,7 +39926,7 @@ $0(){},
 $S:0}
 A.afJ.prototype={
 $1(a){var s=a.b
-if((s==null?0:s)>0.06){s=a.a
+if((s==null?0:s)>0.4){s=a.a
 return s==null?"":s}return""},
 $S:331}
 A.afK.prototype={
