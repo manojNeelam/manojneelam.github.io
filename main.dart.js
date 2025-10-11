@@ -7875,7 +7875,7 @@ mO:function mO(a,b,c){this.e=a
 this.f=b
 this.a=c},
 afh:function afh(){},
-auq(a){var s,r,q,p,o="downsampled_readings",n="logistic",m="isotonic",l="predictions",k=J.aq(a),j=k.i(a,"sample_number")
+auq(a){var s,r,q,p,o="downsampled_readings",n="logistic",m="isotonic",l="predictions",k=J.aq(a),j=k.i(a,"prediction_class"),i=k.i(a,"sample_number")
 if(k.i(a,o)==null)s=A.b([],t.n)
 else{s=k.i(a,o)
 s.toString
@@ -7885,19 +7885,20 @@ p=k.i(a,"timestamp")
 if(k.i(a,l)==null)k=A.b([],t.Wl)
 else{k=k.i(a,l)
 k.toString
-k=A.dw(J.Fy(k,new A.XG()),!0,t.mh)}return new A.qb(j,s,r,q,p,k)},
+k=A.dw(J.Fy(k,new A.XG()),!0,t.mh)}return new A.qb(i,s,r,q,p,k,j)},
 avY(a){var s,r=J.aq(a),q=r.i(a,"probability")
 q=q==null?null:J.vb(q)
 s=r.i(a,"prediction")
 r=r.i(a,"confidence")
 return new A.a3w(q,s,r==null?null:J.vb(r))},
-qb:function qb(a,b,c,d,e,f){var _=this
+qb:function qb(a,b,c,d,e,f,g){var _=this
 _.a=a
 _.b=b
 _.c=c
 _.d=d
 _.e=e
-_.f=f},
+_.f=f
+_.r=g},
 XF:function XF(){},
 XG:function XG(){},
 XH:function XH(){},
@@ -39972,10 +39973,12 @@ l.fr=B.fP
 l.as=!1
 s=n.d
 r=n.f
-p=l.at=!1
-if(s!=null){o=s.b
+l.fx=l.at=!1
+if(n.r!=null&&n.r.length!==0){p=n.r
+l.fy=p==null?"":p
+l.fx=!0}else if(s!=null){o=s.b
 q=o==null?"":o
-if(q.toLowerCase()==="Hissing".toLowerCase())l.at=!0}else if(r!=null?J.bS(r)!==0:p){l.fy=""
+if(q.toLowerCase()==="Hissing".toLowerCase())l.at=!0}else if(r!=null&&J.bS(r)!==0){l.fy=""
 p=r
 l.fy=new A.Z(p,new A.afO(),A.X(p).h("Z<1,k>")).td(0,new A.afP()).b3(0,", ")
 l.fx=!0
@@ -40133,8 +40136,7 @@ $1(a){var s,r,q,p,o,n,m,l
 A.aQ().$1(a)
 A.aQ().$1("Successfully connected...")
 s=A.auq(B.a0.d8(0,a))
-n=s.a
-A.aQ().$1("sample number: "+A.l(n==null?"":n))
+A.aQ().$1("sample number: "+s.b.length)
 r=s.b
 n=r
 n=n==null?null:J.bS(n)===0
@@ -40146,10 +40148,12 @@ n.ax=B.fP
 n.dx=!1
 q=s.d
 p=s.f
-m=n.Q=!1
-if(q!=null){l=q.b
+n.as=n.Q=!1
+if(s.r!=null&&s.r.length!==0){m=s.r
+n.at=m==null?"":m
+n.as=!0}else if(q!=null){l=q.b
 o=l==null?"":l
-if(o.toLowerCase()==="Hissing".toLowerCase())n.Q=!0}else if(p!=null?J.bS(p)!==0:m){n.at=""
+if(o.toLowerCase()==="Hissing".toLowerCase())n.Q=!0}else if(p!=null&&J.bS(p)!==0){n.at=""
 m=p
 n.at=new A.Z(m,new A.ag7(),A.X(m).h("Z<1,k>")).td(0,new A.ag8()).b3(0,", ")
 n.as=!0
@@ -40263,7 +40267,7 @@ r=p.d
 r=r==null?null:r.h1()
 q=p.f
 q=A.dw(new A.Z(q,new A.XI(),A.X(q).h("Z<1,@>")),!0,n)
-return A.aA(["sample_number",p.a,"audio_samples",o,"logistic",s,"isotonic",r,"predictions",q],t.N,n)}}
+return A.aA(["sample_number",p.a,"downsampled_readings",o,"logistic",s,"isotonic",r,"prediction_class",p.r,"predictions",q],t.N,n)}}
 A.XF.prototype={
 $1(a){return a==null?null:J.vb(a)},
 $S:44}
